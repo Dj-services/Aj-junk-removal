@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Area – AJ Junk Removal & Demolition Services LLC</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+  padding: 80px 24px 60px; text-align: center;
+}
+.page-hero .section-label { color: var(--yellow); }
+.page-hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 8vw, 80px); color: var(--white); letter-spacing: 2px; line-height: 1; }
+.page-hero h1 span { color: var(--yellow); }
+.page-hero p { font-size: 18px; color: rgba(255,255,255,0.8); margin-top: 16px; }
+
+.area-section { background: var(--light-bg); padding: 80px 24px; }
+.area-header { text-align: center; margin-bottom: 56px; }
+.area-header .section-label { color: var(--blue); }
+
+.area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 48px; }
+
+.area-state {
+  background: var(--white); border-radius: 14px; padding: 40px;
+  border-top: 5px solid var(--blue);
+  box-shadow: 0 4px 24px rgba(26,58,107,0.1);
+}
+.area-state.nh { border-top-color: var(--yellow); }
+
+.area-state-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+.area-state-flag { font-size: 40px; }
+.area-state h3 { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--blue-dark); letter-spacing: 2px; line-height: 1; }
+.area-tag {
+  display: inline-block; background: var(--blue); color: var(--white);
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  padding: 3px 10px; border-radius: 100px; text-transform: uppercase;
+}
+.area-state.nh .area-tag { background: var(--yellow); color: var(--blue-dark); }
+
+.area-cities { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.area-cities li {
+  background: var(--light-bg); color: var(--blue-dark);
+  font-weight: 600; font-size: 15px;
+  padding: 10px 20px; border-radius: 100px;
+  border: 1px solid rgba(26,58,107,0.12);
+  transition: all 0.2s;
+}
+.area-cities li:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
+
+.area-note {
+  background: var(--blue); border-radius: 12px; padding: 32px 36px;
+  display: flex; align-items: center; gap: 20px;
+}
+.area-note-icon { font-size: 40px; flex-shrink: 0; }
+.area-note p { font-size: 17px; color: rgba(255,255,255,0.9); line-height: 1.7; }
+.area-note p strong { color: var(--yellow); }
+
+@media (max-width: 768px) { .area-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="IMG_6527.png" style="height:54px;width:54px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="AJ Junk Removal Logo" />
+      <div class="logo-text">
+        <span class="brand">AJ Junk Removal</span>
+        <span class="sub">& Demolition Services LLC</span>
+      </div>
+    </a>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="area.html" class="active">Service Area</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+  <div class="page-hero">
+    <div class="section-label">Where We Serve</div>
+    <h1>Our <span>Service</span><br>Area</h1>
+    <p>Proudly serving communities across Massachusetts & New Hampshire.</p>
+  </div>
+
+  <section class="area-section">
+    <div class="container">
+      <div class="area-header">
+        <div class="section-label dark">Coverage</div>
+        <h2 class="section-title dark">We Come To You</h2>
+        <p class="section-desc" style="margin:0 auto;">We serve a wide range of communities across two states. Don't see your city? Give us a call — we may still be able to help.</p>
+      </div>
+
+      <div class="area-grid">
+        <div class="area-state fade-in">
+          <div class="area-state-header">
+            <span class="area-state-flag">🏙️</span>
+            <div>
+              <h3>Massachusetts</h3>
+              <span class="area-tag">MA</span>
+            </div>
+          </div>
+          <ul class="area-cities">
+            <li>Lawrence</li>
+            <li>North Andover</li>
+            <li>Methuen</li>
+            <li>Boston</li>
+            <li>Lowell</li>
+            <li>& Nearby Areas</li>
+          </ul>
+        </div>
+
+        <div class="area-state nh fade-in">
+          <div class="area-state-header">
+            <span class="area-state-flag">🌲</span>
+            <div>
+              <h3>New Hampshire</h3>
+              <span class="area-tag">NH</span>
+            </div>
+          </div>
+          <ul class="area-cities">
+            <li>Salem</li>
+            <li>Plaistow</li>
+            <li>& Nearby Areas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="area-note fade-in">
+        <span class="area-note-icon">📍</span>
+        <p>Not sure if we cover your area? <strong>Just call or text us at (978) 690-9631</strong> and we'll let you know right away. We're always happy to help and may be able to accommodate locations beyond our listed service area.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <div class="container">
+      <h2>In Our Area? Let's Get Started.</h2>
+      <p>Call or text us today for your free estimate!</p>
+      <a href="tel:9786909631" class="btn-dark">📞 Call or Text (978) 690-9631</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="IMG_6527.png" style="height:60px;width:60px;border-radius:50%;object-fit:cover;margin-bottom:16px;" alt="AJ Junk Removal Logo" />
+        <p>AJ Junk Removal & Demolition Services LLC — serving Massachusetts and New Hampshire with fast, reliable, and affordable junk removal and demolition services.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="area.html">Service Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-line">📞 <a href="tel:9786909631">(978) 690-9631</a></div>
+        <div class="footer-contact-line">✉️ <a href="mailto:ajjunkremovalma@gmail.com">ajjunkremovalma@gmail.com</a></div>
+        <div class="footer-contact-line">📍 157 Newbury St, Lawrence, MA</div>
+        <div class="footer-contact-line">🕐 Mon–Fri 7AM–4PM</div>
+        <div class="footer-contact-line">🕐 Sat 6:30AM–2:30PM</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AJ Junk Removal & Demolition Services LLC. All rights reserved.</p>
+      <p>Lawrence, MA</p>
+    </div>
+  </footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

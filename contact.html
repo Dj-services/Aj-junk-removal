@@ -17,7 +17,7 @@
 
 .contact-section { background: var(--light-bg); padding: 80px 24px; }
 
-.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 64px; align-items: start; max-width: 700px; }
 
 /* Info */
 .contact-info .section-label { color: var(--blue); }
@@ -167,60 +167,7 @@
           </div>
         </div>
 
-        <!-- Form -->
-        <div class="contact-form-wrap fade-in">
-          <h3>Send Us a Message</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" id="fname" placeholder="John" />
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" id="lname" placeholder="Smith" />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Phone</label>
-              <input type="tel" id="phone" placeholder="(978) 000-0000" />
-            </div>
-            <div class="form-group">
-              <label>Email</label>
-              <input type="email" id="email" placeholder="you@email.com" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Service Needed</label>
-            <select id="service">
-              <option value="">Select a service...</option>
-              <option>Junk Removal</option>
-              <option>Basement Cleanout</option>
-              <option>Demolition</option>
-              <option>Construction Debris Removal</option>
-              <option>Construction Material Delivery</option>
-              <option>House & Garage Cleanout</option>
-              <option>Appliance Removal</option>
-              <option>Furniture Removal</option>
-              <option>Mattress Removal</option>
-              <option>Electronic Waste Removal</option>
-              <option>Yard Debris Removal</option>
-              <option>Hoarder Cleanout</option>
-              <option>Office Furniture Removal</option>
-              <option>Commercial Waste Management</option>
-              <option>Snow Removal</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea id="message" placeholder="Tell us about your project — location, size, and anything else that helps us give you the best estimate..."></textarea>
-          </div>
-          <button class="btn-submit" onclick="submitForm()">Send Message</button>
-          <div class="form-success" id="form-success">
-            ✅ Thanks! We'll get back to you as soon as possible. For faster service, call or text us at (978) 690-9631.
-          </div>
-        </div>
+
       </div>
     </div>
   </section>

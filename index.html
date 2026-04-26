@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJ Junk Removal & Demolition Services LLC</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.hero {
+  min-height: calc(100vh - 72px);
+  background: linear-gradient(135deg, rgba(10,25,60,0.93) 0%, rgba(26,58,107,0.86) 100%),
+    url('IMG_6528.png') center/cover no-repeat;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  position: relative; overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: linear-gradient(to top, var(--light-bg), transparent);
+}
+.hero-content { max-width: 820px; position: relative; z-index: 1; }
+.hero-badge {
+  display: inline-block;
+  background: var(--yellow); color: var(--blue-dark);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; padding: 6px 20px; border-radius: 100px;
+  margin-bottom: 28px;
+  animation: fadeDown 0.6s ease both;
+}
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(56px, 10vw, 100px);
+  color: var(--white); line-height: 0.95; letter-spacing: 2px;
+  margin-bottom: 16px;
+  animation: fadeDown 0.7s 0.1s ease both;
+}
+.hero h1 span { color: var(--yellow); }
+.hero-sub {
+  font-size: 18px; color: rgba(255,255,255,0.8);
+  margin-bottom: 44px; line-height: 1.6;
+  animation: fadeDown 0.7s 0.2s ease both;
+}
+.hero-btns {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  animation: fadeDown 0.7s 0.3s ease both;
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ABOUT PREVIEW */
+.about-preview { background: var(--light-bg); padding: 80px 24px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about-img { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(26,58,107,0.2); position: relative; }
+.about-img img { width: 100%; height: 400px; object-fit: cover; display: block; }
+.about-img-badge {
+  position: absolute; bottom: 20px; left: 20px;
+  background: var(--yellow); color: var(--blue-dark);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+  font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+  padding: 10px 18px; border-radius: 6px;
+}
+.about-content p { font-size: 17px; color: var(--text-gray); line-height: 1.8; margin-bottom: 14px; }
+.tagline {
+  font-family: 'Bebas Neue', sans-serif; font-size: 26px;
+  color: var(--blue); letter-spacing: 3px; margin-top: 24px;
+  border-left: 4px solid var(--yellow); padding-left: 16px;
+}
+.about-content .section-label { color: var(--blue); }
+
+/* SERVICES PREVIEW */
+.services-preview { background: var(--white); padding: 80px 24px; }
+.services-preview-header { text-align: center; margin-bottom: 48px; }
+.services-preview-header .section-label { color: var(--blue); }
+.services-mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px; }
+.service-mini-card {
+  background: var(--light-bg); border-radius: 10px; padding: 22px 20px;
+  border-bottom: 3px solid transparent; transition: all 0.25s;
+  display: flex; align-items: center; gap: 12px;
+}
+.service-mini-card:hover { border-bottom-color: var(--yellow); background: var(--white); box-shadow: 0 6px 24px rgba(26,58,107,0.1); transform: translateY(-3px); }
+.service-mini-card .s-icon { font-size: 20px; }
+.service-mini-card span { font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; color: var(--blue-dark); text-transform: uppercase; letter-spacing: 0.5px; }
+.services-preview-footer { text-align: center; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-btns { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="IMG_6533.png" style="height:65px;width:160px;object-fit:contain;flex-shrink:0;" alt="AJ Junk Removal Logo" /><div class="logo-text"><span class="brand">AJ Junk Removal</span><span class="sub">&amp; Demolition Services LLC</span></div>
+      
+        
+        
+      
+    </a>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span>
+    <nav id="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="area.html">Service Area</a>
+      <a href="contact.html">Contact</a>
+
+    </nav>
+  
+</header>
+
+<div class="page">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">⚡ Same-Day Service Available
+      <h1>Junk Removal &<br><span>Demolition</span></h1>
+      <p class="hero-sub">Serving Lawrence, MA and surrounding areas in Massachusetts & New Hampshire.<br>Fast. Reliable. Affordable.</p>
+      <div class="hero-btns">
+        
+        <a href="tel:9786909631" class="btn-outline">📞 Call or Text (978) 690-9631</a>
+      
+    
+  </section>
+
+  <!-- BADGES -->
+  <div class="badges">
+    <div class="badges-inner">
+      <div class="badge-item"><span class="badge-icon">⚡</span><strong>Same-Day Service</strong>
+      <div class="badge-item"><span class="badge-icon">💰</span><strong>Free Estimates</strong>
+      <div class="badge-item"><span class="badge-icon">🏠</span><strong>Residential & Commercial</strong>
+      <div class="badge-item"><span class="badge-icon">♻️</span><strong>Eco-Friendly Disposal</strong>
+      <div class="badge-item"><span class="badge-icon">📍</span><strong>Serving MA & NH</strong>
+    
+  
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about-preview">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img fade-in">
+          <img src="IMG_6532.png" alt="AJ Junk Removal truck" />
+          <div class="about-img-badge">Licensed LLC · Insured
+        
+        <div class="about-content fade-in">
+          <div class="section-label dark">About Us
+          <h2 class="section-title dark">We Go Above &<br>Beyond For You</h2>
+          <p>AJ Junk Removal & Demolition Services LLC is owned and operated by <strong>Amaurys Jimenez</strong>, a local professional dedicated to delivering exceptional service on every single job — no matter the size.</p>
+          <p>We show up on time, work hard, and leave your space cleaner than we found it. Customer satisfaction isn't just a goal — it's our standard.</p>
+          <div class="tagline">Fast. Reliable. Affordable.
+          <br>
+          <a href="about.html" class="btn-primary" style="margin-top:8px;">Learn More About Us</a>
+        
+      
+    
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-preview">
+    <div class="container">
+      <div class="services-preview-header">
+        <div class="section-label dark">What We Do
+        <h2 class="section-title dark">Our Services</h2>
+        <p class="section-desc" style="margin:0 auto 0;">We handle everything from single-item pickups to full demolition projects.</p>
+      
+      <div class="services-mini-grid">
+        <div class="service-mini-card fade-in"><span class="s-icon">🗑️</span><span>Junk Removal</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">🏚️</span><span>Basement Cleanout</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">⚒️</span><span>Demolition</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">🏗️</span><span>Construction Debris</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">🏠</span><span>Garage Cleanouts</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">🛋️</span><span>Furniture Removal</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">❄️</span><span>Snow Removal</span>
+        <div class="service-mini-card fade-in"><span class="s-icon">♻️</span><span>Recycling & Donating</span>
+      
+      <div class="services-preview-footer">
+        <a href="services.html" class="btn-primary">View All Services</a>
+      
+    
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Ready to Clear It Out?</h2>
+      <p>Get your free estimate today — same-day service available!</p>
+      <a href="tel:9786909631" class="btn-dark">📞 Call or Text (978) 690-9631</a>
+    
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="IMG_6533.png" style="height:70px;width:auto;object-fit:contain;margin-bottom:16px;" alt="AJ Junk Removal Logo" />
+        <p>AJ Junk Removal & Demolition Services LLC — serving Massachusetts and New Hampshire with fast, reliable, and affordable junk removal and demolition services.</p>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="area.html">Service Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-line">📞 <a href="tel:9786909631">(978) 690-9631</a>
+        <div class="footer-contact-line">✉️ <a href="mailto:ajjunkremovalma@gmail.com">ajjunkremovalma@gmail.com</a>
+        <div class="footer-contact-line">📍 157 Newbury St, Lawrence, MA
+        <div class="footer-contact-line">🕐 Mon–Fri 7AM–4PM
+        <div class="footer-contact-line">🕐 Sat 6:30AM–2:30PM
+      
+    
+    <div class="footer-bottom">
+      <p>© 2025 AJ Junk Removal & Demolition Services LLC. All rights reserved.</p>
+      <p>Lawrence, MA</p>
+    
+  </footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>

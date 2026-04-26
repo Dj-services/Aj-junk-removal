@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us – AJ Junk Removal & Demolition Services LLC</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.page-hero .section-label { color: var(--yellow); text-align: center; }
+.page-hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 8vw, 80px); color: var(--white); letter-spacing: 2px; line-height: 1; }
+.page-hero h1 span { color: var(--yellow); }
+
+.about-main { background: var(--light-bg); padding: 80px 24px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-bottom: 64px; }
+.about-img { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(26,58,107,0.2); position: relative; }
+.about-img img { width: 100%; height: 420px; object-fit: cover; display: block; }
+.about-img-badge {
+  position: absolute; bottom: 20px; left: 20px;
+  background: var(--yellow); color: var(--blue-dark);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+  font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+  padding: 10px 18px; border-radius: 6px;
+}
+.about-content .section-label { color: var(--blue); }
+.about-content p { font-size: 17px; color: var(--text-gray); line-height: 1.8; margin-bottom: 16px; }
+.tagline {
+  font-family: 'Bebas Neue', sans-serif; font-size: 26px;
+  color: var(--blue); letter-spacing: 3px; margin: 24px 0;
+  border-left: 4px solid var(--yellow); padding-left: 16px;
+}
+
+.values { background: var(--white); padding: 80px 24px; }
+.values-header { text-align: center; margin-bottom: 48px; }
+.values-header .section-label { color: var(--blue); }
+.values-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+.value-card {
+  background: var(--light-bg); border-radius: 12px; padding: 36px 28px;
+  border-top: 4px solid var(--blue); transition: all 0.25s;
+}
+.value-card:hover { border-top-color: var(--yellow); box-shadow: 0 8px 32px rgba(26,58,107,0.12); transform: translateY(-4px); }
+.value-icon { font-size: 36px; margin-bottom: 16px; display: block; }
+.value-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--blue-dark); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+.value-card p { font-size: 15px; color: var(--text-gray); line-height: 1.7; }
+
+.owner-section { background: var(--blue); padding: 80px 24px; }
+.owner-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; align-items: center; }
+.owner-img { border-radius: 50%; overflow: hidden; width: 220px; height: 220px; margin: 0 auto; border: 6px solid var(--yellow); box-shadow: 0 0 0 10px rgba(245,193,0,0.15); }
+.owner-img img { width: 100%; height: 100%; object-fit: cover; }
+.owner-content .section-label { color: var(--yellow); }
+.owner-content h2 { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--white); letter-spacing: 2px; line-height: 1; margin-bottom: 8px; }
+.owner-title { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--yellow); margin-bottom: 20px; }
+.owner-content p { font-size: 17px; color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 14px; }
+
+@media (max-width: 768px) {
+  .about-grid, .owner-grid { grid-template-columns: 1fr; gap: 32px; }
+  .owner-img { width: 160px; height: 160px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="IMG_6535.jpeg" style="height:65px;width:65px;object-fit:contain;flex-shrink:0;border-radius:8px;" alt="AJ Junk Removal Logo" /><div class="logo-text"><span class="brand">AJ Junk Removal</span><span class="sub">&amp; Demolition Services LLC</span></div>
+      
+        
+        
+      
+    </a>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="area.html">Service Area</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+  
+</header>
+
+<div class="page">
+  <div class="page-hero">
+    <div class="section-label">Who We Are
+    <h1>About <span>AJ Junk</span><br>Removal</h1>
+  
+
+  <section class="about-main">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img fade-in">
+          <img src="IMG_6532.png" alt="AJ Junk Removal branded truck" />
+          <div class="about-img-badge">Licensed LLC · Insured
+        
+        <div class="about-content fade-in">
+          <div class="section-label">Our Story
+          <h2 class="section-title dark">Built On Hard<br>Work & Trust</h2>
+          <p>AJ Junk Removal & Demolition Services LLC was founded with one simple mission: to make junk removal and demolition easy, stress-free, and affordable for every customer we serve.</p>
+          <p>We proudly serve homeowners, landlords, contractors, and businesses across Massachusetts and New Hampshire. Whether it's a single piece of furniture or a full property cleanout, we treat every job with the same level of care and professionalism.</p>
+          <p>We show up on time, work efficiently, and leave your space cleaner than we found it. Customer satisfaction isn't just a goal — it's our standard.</p>
+          <div class="tagline">Fast. Reliable. Affordable.
+        
+      
+    
+  </section>
+
+  <section class="values">
+    <div class="container">
+      <div class="values-header">
+        <div class="section-label dark">What Drives Us
+        <h2 class="section-title dark">Our Values</h2>
+      
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <span class="value-icon">⚡</span>
+          <h3>Same-Day Service</h3>
+          <p>We know junk doesn't wait. That's why we offer same-day service so you can get your space back fast.</p>
+        
+        <div class="value-card fade-in">
+          <span class="value-icon">🤝</span>
+          <h3>Customer First</h3>
+          <p>We always go above and beyond. Every job gets our full attention and effort — no shortcuts, no excuses.</p>
+        
+        <div class="value-card fade-in">
+          <span class="value-icon">♻️</span>
+          <h3>Eco-Friendly</h3>
+          <p>We recycle and donate whenever possible, keeping as much out of landfills as we can.</p>
+        
+        <div class="value-card fade-in">
+          <span class="value-icon">💰</span>
+          <h3>Fair Pricing</h3>
+          <p>Free estimates, transparent pricing, and no hidden fees. You'll always know what you're paying before we start.</p>
+        
+        <div class="value-card fade-in">
+          <span class="value-icon">🏆</span>
+          <h3>Quality Work</h3>
+          <p>We're proud of every job we complete. From small pickups to major demolitions, we do it right every time.</p>
+        
+        <div class="value-card fade-in">
+          <span class="value-icon">📍</span>
+          <h3>Local & Trusted</h3>
+          <p>We're your neighbors. We care about the communities we serve across MA and NH.</p>
+        
+      
+    
+  </section>
+
+  <section class="owner-section">
+    <div class="container">
+      <div class="owner-grid">
+        <div class="owner-img fade-in">
+          <img src="IMG_6533.png" alt="Amaurys Jimenez - Owner" />
+        
+        <div class="owner-content fade-in">
+          <div class="section-label">Meet The Owner
+          <h2>Amaurys Jimenez</h2>
+          <div class="owner-title">Founder & Owner · AJ Junk Removal & Demolition Services LLC
+          <p>Amaurys started AJ Junk Removal with a truck, a trailer, and a commitment to doing right by every customer. His hands-on approach and dedication to quality have built the business into a trusted name across Massachusetts and New Hampshire.</p>
+          <p>When you hire AJ Junk Removal, you're not just hiring a company — you're getting a professional who takes pride in every job and treats your property with respect.</p>
+          <a href="contact.html" class="btn-primary" style="margin-top:12px;">Work With Us</a>
+        
+      
+    
+  </section>
+
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Ready to Clear It Out?</h2>
+      <p>Get your free estimate today — same-day service available!</p>
+      <a href="tel:9786909631" class="btn-dark">📞 Call or Text (978) 690-9631</a>
+    
+  
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="IMG_6535.jpeg" style="height:70px;width:70px;object-fit:contain;margin-bottom:16px;border-radius:8px;" alt="AJ Junk Removal Logo" />
+        <p>AJ Junk Removal & Demolition Services LLC — serving Massachusetts and New Hampshire with fast, reliable, and affordable junk removal and demolition services.</p>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="area.html">Service Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-line">📞 <a href="tel:9786909631">(978) 690-9631</a>
+        <div class="footer-contact-line">✉️ <a href="mailto:ajjunkremovalma@gmail.com">ajjunkremovalma@gmail.com</a>
+        <div class="footer-contact-line">📍 157 Newbury St, Lawrence, MA
+        <div class="footer-contact-line">🕐 Mon–Fri 7AM–4PM
+        <div class="footer-contact-line">🕐 Sat 6:30AM–2:30PM
+      
+    
+    <div class="footer-bottom">
+      <p>© 2025 AJ Junk Removal & Demolition Services LLC. All rights reserved.</p>
+      <p>Lawrence, MA</p>
+    
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
